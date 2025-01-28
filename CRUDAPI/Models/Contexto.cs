@@ -6,9 +6,10 @@ namespace CRUDAPI.Models
     {
         public DbSet<Medico> Medicos {get; set;}
 
-        public Contexto(DbContextOptions<Contexto> opcoes) : base(opcoes)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-        
+          optionsBuilder.UseSqlite("Data Source=medico.sqlit");
+          base.OnConfiguring(optionsBuilder);
         }
 
     }

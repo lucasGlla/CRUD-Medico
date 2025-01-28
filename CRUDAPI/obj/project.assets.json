@@ -9469,19 +9469,19 @@
     ]
   },
   "packageFolders": {
-    "/home/lucas/.nuget/packages/": {}
+    "C:\\Users\\Suporte\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/lucas/Downloads/atividade/sistema-medicos-e-pacientes/CRUDAPI/CRUDAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Suporte\\Desktop\\crud medico\\CRUD-Medico\\CRUDAPI\\CRUDAPI.csproj",
       "projectName": "CRUDAPI",
-      "projectPath": "/home/lucas/Downloads/atividade/sistema-medicos-e-pacientes/CRUDAPI/CRUDAPI.csproj",
-      "packagesPath": "/home/lucas/.nuget/packages/",
-      "outputPath": "/home/lucas/Downloads/atividade/sistema-medicos-e-pacientes/CRUDAPI/obj/",
+      "projectPath": "C:\\Users\\Suporte\\Desktop\\crud medico\\CRUD-Medico\\CRUDAPI\\CRUDAPI.csproj",
+      "packagesPath": "C:\\Users\\Suporte\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Suporte\\Desktop\\crud medico\\CRUD-Medico\\CRUDAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/lucas/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Suporte\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -9565,7 +9565,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -9574,7 +9574,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Versão detectada do pacote fora da restrição de dependência: Pomelo.EntityFrameworkCore.MySql 8.0.2 requer Microsoft.EntityFrameworkCore.Relational (>= 8.0.2 && <= 8.0.999), mas a versão Microsoft.EntityFrameworkCore.Relational 9.0.1 foi resolvida.",
+      "message": "Detected package version outside of dependency constraint: Pomelo.EntityFrameworkCore.MySql 8.0.2 requires Microsoft.EntityFrameworkCore.Relational (>= 8.0.2 && <= 8.0.999) but version Microsoft.EntityFrameworkCore.Relational 9.0.1 was resolved.",
       "libraryId": "Microsoft.EntityFrameworkCore.Relational",
       "targetGraphs": [
         "net9.0"
