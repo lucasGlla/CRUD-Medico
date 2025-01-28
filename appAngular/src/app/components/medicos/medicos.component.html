@@ -1,0 +1,89 @@
+<div class="container p-5" *ngIf="visibilidadeTableMedico">
+    <div class="border border-light rounded p-5">
+        <div>
+            <button type="button" class="btn btn-sm btn-secondary" (click)="exibirFormularioCadastro()">
+                Cadastrar Medico
+            </button>
+        </div>
+
+        <hr>
+
+        <table class="table table-striped table-hover table-sm" *ngIf="medicos">
+            <thead class="thead-light">
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Pacientes</th>
+                    <th>Area</th>
+                    <th>Idade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let medico of medicos">
+                    <td>{{ medico.nome }}</td>
+                    <td>{{ medico.email }}</td>
+                    <td>{{ medico.pacientes }}</td>
+                    <td>{{ medico.area }}</td>
+                    <td>{{ medico.idade }}</td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-outline-info" 
+                                (click)="FormularioAtualizacaoMedico(medico.medicoId)">
+                            Atualizar
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-danger"
+                        (click)="ExcluirMedico(medico.medicoId)">
+                            Apagar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="container p-5" *ngIf="visibilidadeFormMedico">
+    <div class="row">
+        <div class="col-6 border border-light rounded p-5 shadow" *ngIf="formularioMedico">
+            <h4>{{ tituloFormularioMedico }}</h4>
+            <hr>
+
+            <form [formGroup]="formularioMedico" (ngSubmit)="EnviarFormularioMedico()">
+                <div class="form-group">
+                    <label>Nome:</label>
+                    <input type="text" class="form-control form-control-sm" formControlName="nome">
+                </div>
+
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="text" class="form-control form-control-sm" formControlName="email">
+                </div>
+
+                <div class="form-group">
+                    <label>Pacientes:</label>
+                    <input type="text" class="form-control form-control-sm" formControlName="pacientes">
+                </div>
+
+                <div class="form-group">
+                    <label>Idade:</label>
+                    <input type="text" class="form-control form-control-sm" formControlName="idade">
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <button type="submit" class="btn btn-sm btn-outline-secondary">
+                                Cadastrar
+                            </button>
+                        </div>
+                        <div class="pl-1">
+                            <button type="button" class="btn btn-sm btn-light" (click)="Voltar()">
+                                Voltar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
